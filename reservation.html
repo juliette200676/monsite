@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Réservation d'hôtel - FADA N'GOURMA</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="java.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Reservez votre séjour à FADA N'GOURMA</h1>
+        <nav>
+            <ul>
+                <li><a href="FADA.html">Accueil</a></li>
+                <li><a href="patrimoine.html">Patrimoine</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="reservation">
+        <h2>Formulaire de réservation</h2>
+        <form id="reservationForm">
+            <br>
+            <label for="nom">Nom complet :</label>
+            <input type="text"  name="nom"  required>
+            </br>
+            <br>
+            <label for="email">Adresse Email :</label>
+            <input type="email" name="email"  required>
+            </br>
+            <br>
+            <label for="telephone">Numéro de téléphone :</label>
+            <input type="tel"  name="telephone"  required>
+            </br>
+            <br>
+            <label for="arrivee">Date d'arrivée :</label>
+            <input type="date"  name="arrivee" required>
+            </br>
+            <br>
+            <label for="depart">Date de départ :</label>
+            <input type="date"  name="depart" required>
+             </br>
+             <br>
+             <label for="nuits">Nombre de nuits :</label>
+            <input type="number"  name="nuits"  required>
+            </br>
+            <br>
+           <label for="hotel">Sélectionnez un hôtel :</label>
+            <select name="hotel">
+                <option value="Auberge du 11 Decembre "> Auberge du 11 Decembre</option>
+                <option value="hotel_PANANCHE">Hôtel PANANCHE</option>
+                <option value="LANAYA"> LANAYA</option>
+                <option value="RESIDENCE BELMONDE">RESIDENCE BELMONDE</option>
+                <option value="TV5">TV5</option>
+            </select>
+            </br>
+            <br> 
+            <label for="chambres">Type de chambre :</label>
+            <select id="chambres" name="chambres">
+                <option value="standard">Standard</option>
+                <option value="luxe">Luxe</option>
+                <option value="suite">Suite</option>
+                <option value="famille">Famille</option>
+            </select>
+        </br>
+        <br>
+            <label for="demandes">Demandes spéciales :</label>
+            <textarea id="demandes" name="demandes" rows="3" placeholder="Exemple : lit supplémentaire, allergie alimentaire..."></textarea>
+
+            <label for="paiement">Mode de paiement :</label>
+            <select id="paiement" name="paiement">
+                <option value="carte">Carte bancaire</option>
+                <option value="paypal">PayPal</option>
+                <option value="espece">Paiement à l’arrivée</option>
+            </select>
+         </br>   
+
+            <button type="submit">Confirmer la réservation</button>
+        </form>
+    </section>
+
+    <div class="des"><p>FADA N'GOURMA une destination à ne pas manquée</p></div>
+    <footer>
+        <p class="pied"><i>&copy; 2025 @fada N'Gourma Ville Touristique. Tous droits réservés.</i></p>
+    </footer>
+
+</body>
+</html>
